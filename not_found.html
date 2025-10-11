@@ -17,18 +17,21 @@
 		message = "_x Dead End! x";
 		function step() {
 			message = message.substr(1) + message.substr(0,1);
-			document.title = message.substr(0,20);}</script>
+			document.title = message.substr(0,20);}
+		</script>
 </head>
 
 <body onload="setInterval(step,300)">
 
 
 <div class ="center">
-	<div id="layout" style="width: 30em">
+	<div id="layout" style="width: 16em">
 		<div class="layouthead"></div>
 	<div class="innerborder">
-		<div class="innercontainer">
-			<p>404</p>
+		<div class="innercontainer" style="width: 15em">
+			<h5>404</h5>
+			<p>Page not found!</p>
+			<div class="navlink"><a href="./index.html">< Back!</a></div>
 		</div>
 	</div>
 </div>
