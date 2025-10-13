@@ -9,16 +9,12 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Kosugi+Maru&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
-	<link href="./style/style.css" rel="stylesheet" type="text/css" media="all">
-		<link href="./style/frame.css" rel="stylesheet" type="text/css" media="all">
+	<link href="./style/style.css" rel="stylesheet"media="all">
+		<link href="./style/frame.css" rel="stylesheet">
 		<script src="./js/frame-link.js"></script>
-
+		<!--TitleMarquee-->
 		<script type="text/javascript">
-		message = "ie fossie nya nya foss";
-		function step() {
-			message = message.substr(1) + message.substr(0,1);
-			document.title = message.substr(0,20);}
-		</script>
+		message = "ie fossie nya nya foss";function step() {message = message.substr(1) + message.substr(0,1); document.title = message.substr(0,20);}</script>
 </head>
 
 <body onload="setInterval(step,300)">
@@ -54,7 +50,15 @@
 		<div class="navhead"></div>
 		<div id="sidepad">
 
-		<!--Code for the music player. Originally by Adilene.net. Leave this alone and edit the javascript file. If you wish to edit the appearance, it's also in the CSS file.-->
+			<!--Playlist-->
+			<script id="playlist" type="application/json">
+			{
+				name:"moseni_hydrangea",
+				path:"https://files.catbox.moe/9lba6j.ogg"
+			},
+			</script>
+
+		<!--music player. Originally by Adilene.net.-->
 			<div class="now-playing"></div>
 			<div class="track-info">
 				<div class="track-name"></div>
@@ -71,7 +75,7 @@
 						<div class="next-track" onclick="nextTrack()">&#187;</div>
 					</div>
 				</div>
-			<audio id="music" src=""></audio>
+				<audio id="music" src=""></audio>
 			</div>
 			
 		</div>
@@ -94,5 +98,5 @@
 
 </div>
 </body>
-<script src="./js/music.js"></script>
+<script src="./js/music-player.js"></script>
 </html>

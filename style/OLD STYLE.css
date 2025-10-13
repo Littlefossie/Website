@@ -1,22 +1,5 @@
 /* ---------------------------- universal stylesheet ---------------------------- */
 
-* -------------- colors -------------- */
-:root {
- /* ----- purples ----- */
- --dark: #2301a9;
- --mediumdark: #3810d1;
- --medium: #9985e8;
- --mediumlight: #b6a8ef;
- --light: #d6cef6;
- /* ----- grayscale ----- */
- --black: #171717;
- --white: #ffffff;
- /* ----- accents ----- */
- --yellow: #f5ecb8;
- --lightpink: #e6c6d6;
---pink: #d49cb4;
-}
-
 /* -------------- main layout -------------- */
 html {
  cursor: url(../images/cur.gif), auto;
@@ -44,6 +27,16 @@ html {
  font-size: 11px;
  line-height: 16px;
 }
+
+body {
+ font-family: 'Zen Maru Gothic';
+ color: #4f4257;
+ font-weight: bold;
+ line-height: 1.3em;
+ background-position: top;
+ overflow-x: hidden;
+ }
+
  /* -------------- links -------------- */
 a:link, a:visited {
  color: #9e72d9;
@@ -75,7 +68,16 @@ b {
  color: #a562ff;
  }
 
-/* ----- heading colors ----- */
+* {
+ scrollbar-width: thin;
+ scrollbar-color: #9071bb #daccee;
+}
+
+img {
+ max-width: 100%;
+ height: auto;
+}
+
 p {
  color: #4f4257;
  line-height: 1.1em;
@@ -112,34 +114,8 @@ h5 {
  -webkit-text-stroke: 4px transparent;
 }
 
-/* ----- list bullets ----- */
 ul {
  list-style-image: url(../images/bullet.png);
-}
-
-
-
-
-
-
-
-body {
- font-family: 'Zen Maru Gothic';
- color: #4f4257;
- font-weight: bold;
- line-height: 1.3em;
- background-position: top;
- overflow-x: hidden;
- }
-
-* {
- scrollbar-width: thin;
- scrollbar-color: #9071bb #daccee;
-}
-
-img {
- max-width: 100%;
- height: auto;
 }
 
 textarea {

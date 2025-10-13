@@ -9,16 +9,12 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Kosugi+Maru&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
-	<link href="./style/style.css" rel="stylesheet" type="text/css" media="all">
-		<link href="./style/frame.css" rel="stylesheet" type="text/css" media="all">
+	<link href="./style/style.css" rel="stylesheet" media="all">
+		<link href="./style/frame.css" rel="stylesheet">
 		<script src="./js/frame-link.js"></script>
-
+		<!--TitleMarquee-->
 		<script type="text/javascript">
-		message = "_x Dead End! x";
-		function step() {
-			message = message.substr(1) + message.substr(0,1);
-			document.title = message.substr(0,20);}
-		</script>
+		message = "_x Dead End! x";function step() {message = message.substr(1) + message.substr(0,1); document.title = message.substr(0,20);}</script>
 </head>
 
 <body onload="setInterval(step,300)">
