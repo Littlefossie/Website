@@ -13,11 +13,11 @@
 		<link href="./style/frame.css" rel="stylesheet">
 		<script src="./js/frame-link.js"></script>
 		<!--TitleMarquee-->
-		<script type="text/javascript">
-		message = "ie fossie nya nya foss";function step() {message = message.substr(1) + message.substr(0,1); document.title = message.substr(0,20);}</script>
+		<script> var marqright = true;
+		var marqtit = "ie fossie nya nya foss";
+		var marqspeed = 300;</script><script src="./js/titlemarquee.js"></script>
 </head>
-
-<body onload="setInterval(step,300)">
+<body>
 <div id="layout">
 	<div class="layouthead"></div>
 
@@ -49,23 +49,25 @@
 	<aside id="musicplayer">
 		<div class="navhead"></div>
 		<div id="sidepad">
-
 			<!--Playlist-->
-			<script id="playlist" type="application/json">
-			{
-				name:"moseni_hydrangea",
-				path:"https://files.catbox.moe/9lba6j.ogg"
-			},
-			</script>
-
-		<!--music player. Originally by Adilene.net.-->
+			<script id="music-playlist" type="application/json">{
+				"name":"moseni_hydrangea",
+				"path":"https://files.catbox.moe/9lba6j.ogg"
+			}</script>
+			<!--music player. Originally by Adilene.net.-->
 			<div class="now-playing"></div>
 			<div class="track-info">
 				<div class="track-name"></div>
 				<div class="track-artist"></div>
 				<div class="controls">
+
+					<div class="volume">
+						<input type="range" min="0" max="100" value="100" class="volume_slider" onchange="setVolume()">
+						<div class="total_volume">000</div>
+					</div>
+
 					<div class="seeking">
-						<div class="current-time">00:00</div>
+						<div class="current-time">0:00</div>
 						<input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
 						<div class="total-duration">0:00</div>
 					</div>

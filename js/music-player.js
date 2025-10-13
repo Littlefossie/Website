@@ -1,4 +1,4 @@
-  // Initiate variables
+// Initiate variables
 let now_playing = document.querySelector(".now-playing");
 let track_name = document.querySelector(".track-name");
 let track_artist = document.querySelector(".track-artist");
@@ -7,8 +7,9 @@ let playpause_btn = document.querySelector(".playpause-track");
 let next_btn = document.querySelector(".next-track");
 let prev_btn = document.querySelector(".prev-track");
 
-let seek_slider = document.querySelector(".seek_slider");
 let volume_slider = document.querySelector(".volume_slider");
+let total_volume = document.querySelector(".total_volume");
+let seek_slider = document.querySelector(".seek_slider");
 let curr_time = document.querySelector(".current-time");
 let total_duration = document.querySelector(".total-duration");
 
@@ -21,9 +22,8 @@ let curr_track = document.getElementById("music");
 
 // songs
 // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3
-let track_list = [
-    const playlistjson = document.getElementById('playlist').textContent;
-    const playlist = JSON,parse(playlistjson);
+const track_list = [
+    JSON.parse(document.getElementById('music-playlist').textContent)
 ];
 function loadTrack(track_index){
     clearInterval(updateTimer);
