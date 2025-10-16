@@ -16,6 +16,9 @@
 		<script> var marqright = true;
 		var marqtit = "ie fossie nya nya foss";
 		var marqspeed = 300;</script><script src="./js/titlemarquee.js"></script>
+		<!--Chattable-->
+		<script src="https://iframe.chat/scripts/main.min.js"></script>
+
 </head>
 <body>
 <div id="layout">
@@ -45,7 +48,7 @@
 		<!--Navigation-->
 		</div>
 	</nav>
-
+	
 	<aside id="musicplayer">
 		<div class="navhead"></div>
 		<div id="sidepad">
@@ -63,7 +66,6 @@
 
 					<div class="volume">
 						<input type="range" min="0" max="100" value="100" class="volume_slider" onchange="setVolume()">
-						<div class="total_volume">000</div>
 					</div>
 
 					<div class="seeking">
@@ -79,7 +81,17 @@
 				</div>
 				<audio id="music" src=""></audio>
 			</div>
-			
+		</div>
+	</aside>
+	
+	<!--Chattable-->
+	<script>
+	chattable.initialize({stylesheet:
+		"./style/chattable.css",});</script>
+	<aside id="main">
+		<div class="navhead"></div>
+		<div id="chat">
+			<iframe src="https://iframe.chat/embed?chat=littlechat" id="chattable"></iframe>
 		</div>
 	</aside>
 		
