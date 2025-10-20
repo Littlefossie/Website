@@ -334,6 +334,16 @@ float: right;
  height:100%
 }
 
+#chat {
+ height: 12em;
+}
+
+#chat iframe {
+ border:none;
+ width:100%;
+ height:100%
+}
+
 #sidepad {
  padding: 4.5%;
 }

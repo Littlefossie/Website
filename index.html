@@ -18,97 +18,94 @@
 		var marqspeed = 300;</script><script src="./js/titlemarquee.js"></script>
 		<!--Chattable-->
 		<script src="https://iframe.chat/scripts/main.min.js"></script>
-
 </head>
 <body>
 <div id="layout">
 	<div class="layouthead"></div>
 
-<header id="topbanner">
+	<header id="topbanner">
 			<h5>littlefossie</h5>
 		<div id="headerfocus">
-			<img src="./images/header.gif" alt="">
-		</div>
-</header>
+			<img src="./images/header.gif" alt=""></div>
+	</header>
 
-<div id="stack">
-	<nav id="nav">
-		<div class="navhead"></div>
-			<div class="navlink"><a href="./index.html">refresh</a></div>
-		<div id="sidepad">
-		<!--Navigation-->
-			<div class="n1"><div class="navlink"><a href="./home.html" target="mainframe">home</a></div></div>
-			<div class="n1"><div class="navlink"><a href="./profile.html" target="mainframe">profile</a></div></div>
-			<div class="n1"><div class="navlink"><a href="./socials.html" target="mainframe">socials</a></div></div>
-			<div class="n1"><div class="navlink"><a href="./constelations.html" target="mainframe">constelations</a></div></div>
-			<div class="n1"><div class="navlink"><a href="./gallery.html" target="mainframe">gallery</a></div></div>
-			<div class="n1"><div class="navlink"><a href="./games.html" target="mainframe">games</a></div></div>
-			<div class="n1"><div class="navlink"><a href="./music.html" target="mainframe">music</a></div></div>
-			<div class="n1"><div class="navlink"><a href="./memorial.html" target="mainframe">memorial</a></div></div>
-		<!--Navigation-->
-		</div>
-	</nav>
-	
-	<aside id="musicplayer">
-		<div class="navhead"></div>
-		<div id="sidepad">
-			<!--Playlist-->
-			<script id="music-playlist" type="application/json">{
-				"name":"moseni_hydrangea",
-				"path":"https://files.catbox.moe/9lba6j.ogg"
-			}</script>
-			<!--music player. Originally by Adilene.net.-->
-			<div class="now-playing"></div>
-			<div class="track-info">
-				<div class="track-name"></div>
-				<div class="track-artist"></div>
-				<div class="controls">
+	<div id="stack">
+		<nav id="nav">
+			<div class="navhead"></div>
+				<div class="navlink"><a href="./index.html">refresh</a></div>
+			<div id="sidepad">
+			<!--Navigation-->
+				<div class="n1"><div class="navlink"><a href="./home.html" target="mainframe">home</a></div></div>
+				<div class="n1"><div class="navlink"><a href="./profile.html" target="mainframe">profile</a></div></div>
+				<div class="n1"><div class="navlink"><a href="./socials.html" target="mainframe">socials</a></div></div>
+				<div class="n1"><div class="navlink"><a href="./constelations.html" target="mainframe">constelations</a></div></div>
+				<div class="n1"><div class="navlink"><a href="./gallery.html" target="mainframe">gallery</a></div></div>
+				<div class="n1"><div class="navlink"><a href="./games.html" target="mainframe">games</a></div></div>
+				<div class="n1"><div class="navlink"><a href="./music.html" target="mainframe">music</a></div></div>
+				<div class="n1"><div class="navlink"><a href="./memorial.html" target="mainframe">memorial</a></div></div>
+			<!--Navigation-->
+			</div>
+		</nav>
+		
+		<aside id="musicplayer">
+			<div class="navhead"></div>
+			<div id="sidepad">
+				<!--Playlist-->
+				<script id="music-playlist" type="application/json">{
+					"name":"moseni_hydrangea",
+					"path":"https://files.catbox.moe/9lba6j.ogg"
+				}</script>
+				<!--music player. Originally by Adilene.net.-->
+				<div class="now-playing"></div>
+				<div class="track-info">
+					<div class="track-name"></div>
+					<div class="track-artist"></div>
+					<div class="controls">
 
-					<div class="volume">
-						<input type="range" min="0" max="100" value="100" class="volume_slider" onchange="setVolume()">
-					</div>
+						<div class="volume">
+							<input type="range" min="0" max="100" value="100" class="volume_slider" onchange="setVolume()">
+						</div>
 
-					<div class="seeking">
-						<div class="current-time">0:00</div>
-						<input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-						<div class="total-duration">0:00</div>
+						<div class="seeking">
+							<div class="current-time">0:00</div>
+							<input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+							<div class="total-duration">0:00</div>
+						</div>
+						<div class="buttons">
+							<div class="prev-track" onclick="prevTrack()">&#171;</div>
+							<div class="playpause-track" onclick="playpauseTrack()">&#9654;</div>
+							<div class="next-track" onclick="nextTrack()">&#187;</div>
+						</div>
 					</div>
-					<div class="buttons">
-						<div class="prev-track" onclick="prevTrack()">&#171;</div>
-						<div class="playpause-track" onclick="playpauseTrack()">&#9654;</div>
-						<div class="next-track" onclick="nextTrack()">&#187;</div>
-					</div>
+					<audio id="music" src=""></audio>
 				</div>
-				<audio id="music" src=""></audio>
+			</div>
+		</aside>
+		
+		<!--Chattable-->
+		<script>chattable.initialize({stylesheet:
+			"./style/chattable.css",});</script>
+		<aside id="main">
+			<div class="navhead"></div>
+			<div id="chat">
+				<iframe src="https://iframe.chat/embed?chat=littlechat" id="chattable"></iframe>
+			</div>
+		</aside>	
+	</div>
+
+	<!--Frame-->
+	<div id="solo">
+		<div id="main">
+			<div class="mainhead"></div>
+			<div id="content">
+				<iframe src="./home.html" name="mainframe" id="mainframe"></iframe>
 			</div>
 		</div>
-	</aside>
-	
-	<!--Chattable-->
-	<script>
-	chattable.initialize({stylesheet:
-		"./style/chattable.css",});</script>
-	<aside id="main">
-		<div class="navhead"></div>
-		<div id="chat">
-			<iframe src="https://iframe.chat/embed?chat=littlechat" id="chattable"></iframe>
-		</div>
-	</aside>
-		
-</div>
-
-<div id="solo">
-	<div id="main">
-		<div class="mainhead"></div>
-		<div id="content">
-			<iframe src="./home.html" name="mainframe" id="mainframe"></iframe>
-		</div>
 	</div>
-</div>
 
-<footer id="botbanner">
-	<div id="footer">hi</div>
-</footer>
+	<footer id="botbanner">
+		<div id="footer">hi</div>
+	</footer>
 
 </div>
 </body>
