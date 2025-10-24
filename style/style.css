@@ -1,6 +1,6 @@
 /* ---------------------------- universal stylesheet ---------------------------- */
 
-* -------------- colors -------------- */
+/* -------------- colors -------------- */
 :root {
  /* ----- purples ----- */
  --dark: #2301a9;
@@ -22,7 +22,7 @@ html {
  cursor: url(../images/cur.gif), auto;
 }
 
-/* hover tooltip */
+/* -------------- hover tooltip -------------- */
 #s-m-t-tooltip {
  /* basic */
  max-width: 300px;
@@ -35,8 +35,7 @@ html {
  -moz-border-radius: 0px;
  -webkit-border-radius: 0px;
  border-radius: 0px;
- /*
- -moz-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15), -1px -1px 0 rgba(255, 255, 255, 0.3);
+ /* -moz-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15), -1px -1px 0 rgba(255, 255, 255, 0.3);
  -webkit-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15), -1px -1px 0 rgba(255, 255, 255, 0.3);
  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15), -1px -1px 0 rgba(255, 255, 255, 0.3);
  /* font */
@@ -44,6 +43,47 @@ html {
  font-size: 11px;
  line-height: 16px;
 }
+
+/* -------------- Popup -------------- */
+.pophost {
+ position: relative;
+ width: 200px;
+ height: 120px;
+ background: #4a90e2;
+ color: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 10px;
+ cursor: pointer;
+ transition: transform 0.2s;
+}
+
+.pophost:hover {
+ transform: scale(1.03);
+}
+
+.popup {
+ position: absolute;
+ inset: 0;
+ background: rgba(20, 20, 20, 0.9);
+ border-radius: 10px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ opacity: 0;
+ pointer-events: none;
+ transition: opacity 0.25s ease;
+ /* padding: 20px;
+ overflow-y: auto; /* allows internal scrolling */
+}
+
+.popuphost.active .popup {
+ opacity: 1;
+ pointer-events: auto;
+}
+
  /* -------------- links -------------- */
 a:link, a:visited {
  color: #9e72d9;

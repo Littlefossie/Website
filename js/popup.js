@@ -1,0 +1,1 @@
+document.querySelectorAll('.pophost').forEach(host => {const popup = host.querySelector('.popup');host.addEventListener('click', (e) => {e.stopPropagation();popup.classList.toggle('show');});});
