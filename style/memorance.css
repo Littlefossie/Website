@@ -1,0 +1,52 @@
+.membox {
+font-size: small;
+ background-image: url(../images/bdbg.png);
+ border: 1px solid #947ed0;
+ border-radius: 5px;
+ display: inline-block; /* Remove to make fill */
+ padding: 5px;
+}
+
+/* -------------- Popup -------------- */
+.poparea {
+ display: grid;
+ grid-template-columns: repeat(3, min-content);
+ justify-content: space-around;
+ gap: 100px;
+ padding: 50px;
+}
+.pophost {
+ position: relative;
+ width: 90px;  /**/
+ height: 90px;  /**/
+ cursor: pointer;  /*change?*/
+ transition: transform 0.2s;
+}
+.pophost:hover {
+ transform: scale(1.05);
+}
+.pophost img {
+ width: 100%;
+ height: 100%;
+}
+.popup {
+ background: transparent;
+ position: absolute;
+ max-width: 250px;
+ width: max-content;
+ height: max-content;
+ top: 50%;
+ left: 50%;
+ border-radius: 10px;
+ pointer-events: none;
+ text-align: center;
+ opacity: 0;
+ transition: opacity 0.35s ease, transform 0.35s ease;
+ transform: translate(-50%, -50%) scale(0.9);
+ box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+.popup.show {
+ opacity: 1;
+ pointer-events: all;  /*highlighting*/
+ transform: translate(-50%, -50%) scale(1);
+}

@@ -44,45 +44,6 @@ html {
  line-height: 16px;
 }
 
-/* -------------- Popup -------------- */
-.pophost {
- position: relative;
- width: 200px;
- height: 120px;
- background: #4a90e2;
- color: white;
- display: flex;
- align-items: center;
- justify-content: center;
- border-radius: 10px;
- cursor: pointer;
- transition: transform 0.2s;
-}
-
-.pophost:hover {
- transform: scale(1.03);
-}
-
-.popup {
- position: absolute;
- inset: 0;
- background: rgba(20, 20, 20, 0.9);
- border-radius: 10px;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- opacity: 0;
- pointer-events: none;
- transition: opacity 0.25s ease;
- /* padding: 20px;
- overflow-y: auto; /* allows internal scrolling */
-}
-
-.popuphost.active .popup {
- opacity: 1;
- pointer-events: auto;
-}
 
  /* -------------- links -------------- */
 a:link, a:visited {
@@ -364,8 +325,8 @@ float: right;
 #content {
  height: 39em;
  padding: 1.5%;
- overflow-y: scroll;
- overflow-x: hidden;
+ /* overflow-y: scroll;
+ overflow-x: hidden; */
 }
 
 #content iframe {
