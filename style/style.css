@@ -31,16 +31,9 @@ html {
  margin: 10px 14px 7px 25px;
  /* style and design */
  padding: 8px;
- background: #a562ff;
- -moz-border-radius: 0px;
- -webkit-border-radius: 0px;
- border-radius: 0px;
- /* -moz-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15), -1px -1px 0 rgba(255, 255, 255, 0.3);
- -webkit-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15), -1px -1px 0 rgba(255, 255, 255, 0.3);
- box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15), -1px -1px 0 rgba(255, 255, 255, 0.3);
- /* font */
- font-family: Arial, Helvetica, sans-serif;
- font-size: 11px;
+ background: #7f1dff;
+ color: #fbf8ff;
+ font-size: 13px;
  line-height: 16px;
 }
 

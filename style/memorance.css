@@ -1,19 +1,10 @@
-.membox {
-font-size: small;
- background-image: url(../images/bdbg.png);
- border: 1px solid #947ed0;
- border-radius: 5px;
- display: inline-block; /* Remove to make fill */
- padding: 5px;
-}
-
-/* -------------- Popup -------------- */
+/* -------------- popup -------------- */
 .poparea {
  display: grid;
  grid-template-columns: repeat(3, min-content);
  justify-content: space-around;
  gap: 100px;
- padding: 50px;
+ padding: 55px;
 }
 .pophost {
  position: relative;
@@ -28,16 +19,21 @@ font-size: small;
 .pophost img {
  width: 100%;
  height: 100%;
+ -webkit-touch-callout: none !important;
+-webkit-user-select: none !important;
+-webkit-user-drag: none !important;
+-khtml-user-select: none !important;
+-moz-user-select: none !important;
+-ms-user-select: none !important;
+ user-select: none !important;
 }
 .popup {
- background: transparent;
  position: absolute;
  max-width: 250px;
  width: max-content;
  height: max-content;
  top: 50%;
  left: 50%;
- border-radius: 10px;
  pointer-events: none;
  text-align: center;
  opacity: 0;
@@ -49,4 +45,14 @@ font-size: small;
  opacity: 1;
  pointer-events: all;  /*highlighting*/
  transform: translate(-50%, -50%) scale(1);
+}
+
+/* -------- popup box -------- */
+.popup {
+ font-size: small;
+ border: 1px solid #947ed0;
+ border-radius: 5px;
+ display: inline-block;
+ padding: 5px;
+ background-image: url(../images/bdbg.png);
 }
