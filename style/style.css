@@ -2,19 +2,28 @@
 
 /* -------------- colors -------------- */
 :root {
- /* ----- purples ----- */
- --dark: #2301a9;
- --mediumdark: #3810d1;
- --medium: #9985e8;
- --mediumlight: #b6a8ef;
- --light: #d6cef6;
- /* ----- grayscale ----- */
- --black: #171717;
- --white: #ffffff;
- /* ----- accents ----- */
- --yellow: #f5ecb8;
- --lightpink: #e6c6d6;
---pink: #d49cb4;
+ /* ----- colors ----- */
+ --color11: #4a10e7;/* Bottom border */
+ --color10: #553cc3;/* big border */
+ --color2: #7f1dff;/* tooltip */
+
+ --color12: #ff2b7c;/* hovergrad */
+ --color3: #e14dff;/* heading 1-3, hover */
+ --color4: #a36dd6;/* headingoutgrad - scrollbar */
+
+ --color7: #8b57ec;/* border */
+
+ --txt: #cb80f7;/* txt */
+ --heading: #581596;/* heading */
+ --headingout: #a608ce;/* headingout */
+ --scrollbar: #350655;/* scrollbar */
+
+ --rgba1: rgba(110, 82, 126, 0.5);/* textarea */
+ --rgba2: rgba(120, 27, 173, 0.4);/* blur */
+ --rgba3: rgb(49, 12, 102, .7);/* n1 */
+ --rgba4: rgba(73, 13, 112, 0.7);/* inner */
+ --rgba5: rgba(155, 21, 155, 0.4);/* outer */
+ --rgba6: rgba(191, 81, 255, 0.808);/* track */
 }
 
 /* -------------- main layout -------------- */
@@ -31,8 +40,8 @@ html {
  margin: 10px 14px 7px 25px;
  /* style and design */
  padding: 8px;
- background: #7f1dff;
- color: #fbf8ff;
+ background: var(--scrollbar);
+ color: var(--color12);
  font-size: 13px;
  line-height: 16px;
 }
@@ -40,63 +49,63 @@ html {
 
  /* -------------- links -------------- */
 a:link, a:visited {
- color: #9e72d9;
+ color: var(--color3);
  font-weight: bold;
  text-decoration: none;
  line-height: 1.3;
 }
 
 a:hover {
- color: #a562ff;
+ color: var(--color3);
  text-decoration: none;
  line-height: 1.3;
- background-color: #ffffff;
+ background-color: var(--heading);
  cursor: url(../images/cur.gif),auto;
 }
 
 /* -------------- emphasis -------------- */
 b {
- color: #9e72d9;
+ color: var(--color3);
  font-weight: bold;
 }
 
 /* ----- highlighted text ----- */
 ::selection {
- color: #a562ff;
+ color: var(--color12);
  }
 
 ::-moz-selection {
- color: #a562ff;
+ color: var(--color12);
  }
 
 /* ----- heading colors ----- */
 p {
- color: #4f4257;
+ color: var(--txt);
  line-height: 1.1em;
 }
 
 /* ----- heading colors ----- */
 h1, h2, h3{
  font-family: 'Kosugi Maru';
- color: #9e72d9;
+ color: var(--color3);
  font-size: 1em;
  text-align: right;
- background-color: #ffffff;
+ background-color: var(--heading);
 }
 
 h4 {
  font-family: 'Kosugi Maru';
- color: #a562ff;
+ color: var(--color3);
  font-size: .8em;
  text-align: left;
 }
 
 h5 {
  font-family: 'Hachi Maru Pop';
- color: #ffffff;
+ color: var(--heading);
  font-size: 3.2em;
  line-height: 1.3em;
- background: -webkit-linear-gradient(#f2e9fb, #9071bb);
+ background: -webkit-linear-gradient(var(--headingout), var(--color4));
  position: absolute;
  top: 6%;
  left: -1%;
@@ -119,7 +128,7 @@ ul {
 
 body {
  font-family: 'Zen Maru Gothic';
- color: #4f4257;
+ color: var(--txt);
  font-weight: bold;
  line-height: 1.3em;
  background-position: top;
@@ -128,7 +137,7 @@ body {
 
 * {
  scrollbar-width: thin;
- scrollbar-color: #9071bb #daccee;
+ scrollbar-color: var(--color4) var(--scrollbar);
 }
 
 img {
@@ -137,9 +146,9 @@ img {
 }
 
 textarea {
- color: #ffffff;
- background: rgba(110, 82, 126, 0.5);
- border: 1px solid #947ed0;
+ color: var(--heading);
+ background: var(--rgba1);
+ border: 1px solid var(--color7);
  border-radius: 5px;
  width: 98%;
  height: 6.7em;
@@ -153,8 +162,8 @@ textarea {
 }
 
 #layout {
- background: rgba(110, 82, 126, 0.5);
- border: 3px solid #947ed0;
+ background: var(--rgba2);
+ border: 3px solid var(--color10);
  border-radius: 5px;
  width: 75em;
  height: auto;
@@ -164,10 +173,9 @@ textarea {
 }
 
 #topbanner {
- background-image: url(../images/hbg.png);
+ background-image: url(../images/ban.avif);
  background-position: center;
  background-size: cover;
- border: 1px solid #947ed0;
  border-radius: 5px;
  width: 96.7%;
  height: 8em;
@@ -179,7 +187,7 @@ textarea {
 #midbanner {
  background-image: url(../images/mdiv.gif);
  background-repeat: repeat-x;
- border: 1px solid #947ed0;
+ border: 1px solid var(--color7);
  border-radius: 5px;
  width: 96.7%;
  margin: 0.5em;
@@ -189,8 +197,8 @@ textarea {
 }
 
 #botbanner {
- background-image: url(../images/ctbg.png);
- border: 1px solid #947ed0;
+ background-image: url(../images/ctbg.gif);
+ border: 1px solid var(--color11);
  border-radius: 5px;
  width: 96.7%;
  height: 1.8em;
@@ -215,8 +223,8 @@ float: right;
 }
 
 #nav{
- background-image: url(../images/ctbg.png);
- border: 3px solid #947ed0;
+ background-image: url(../images/ctbg.gif);
+ border: 3px solid var(--color7);
  border-radius: 5px;
  width: 13.75em;
  height: 100%;
@@ -227,8 +235,8 @@ float: right;
 }
 
 #main {
- background-image: url(../images/ctbg.png);
- border: 3px solid #947ed0;
+ background-image: url(../images/ctbg.gif);
+ border: 3px solid var(--color7);
  border-radius: 5px;
  width: 100%;
  height: 100%;
@@ -247,8 +255,8 @@ float: right;
 
 #musicplayer {
  text-align: center; 
- background-image: url(../images/ctbg.png);
- border: 3px solid #947ed0;
+ background-image: url(../images/ctbg.gif);
+ border: 3px solid var(--color7);
  border-radius: 5px;
  width: 13.75em;
  display: flex;
@@ -258,8 +266,8 @@ float: right;
 }
  
 #botcontainer {
- background-image: url(../images/ctbg.png);
- border: 3px solid #947ed0;
+ background-image: url(../images/ctbg.gif);
+ border: 3px solid var(--color7);
  border-radius: 5px;
  width: 76%;
  height: 34.8em;
@@ -269,8 +277,8 @@ float: right;
 }
 
 .n1{
- background: rgba(216, 202, 235, 0.5);
- border: 1px solid #947ed0;
+ background: var(--rgba3);
+ border: 1px solid var(--color7);
  border-radius: 5px;
  display: block;
  margin: 3px 1px 3px 1px;
@@ -278,9 +286,9 @@ float: right;
 
 .navlink a{
  font-family: 'Zen Maru Gothic';
- color: #ffffff;
+ color: var(--heading);
  letter-spacing: 2px;
- background: -webkit-linear-gradient(#f2e9fb, #9071bb);
+ background: -webkit-linear-gradient(var(--headingout), var(--color4));
  margin: 3px;
  padding: 3px;
  -webkit-background-clip: text;
@@ -289,29 +297,30 @@ float: right;
 
 .navlink a:hover {
  font-family: 'Zen Maru Gothic';
- background: -webkit-linear-gradient(white, #9966ff);
+ background: -webkit-linear-gradient(var(--heading), var(--color12));
  -webkit-background-clip: text;
  -webkit-text-stroke: 4px transparent;
  }
 
 .innercontainer {
- background: rgba(255, 255, 255, 0.7);
- border: 1px solid #947ed0;
+ background: var(--rgba4);
+ border: 1px solid var(--color7);
  border-radius: 5px;
  margin: 1%;
  padding: 1%;
 }
 
 .outercontainer {
- background: rgba(216, 202, 235, 0.5);
- border: 1px solid #947ed0;
+ background: var(--rgba5);
+ border: 1px solid var(--color7);
  border-radius: 5px;
  padding: 1%;
  margin: 1%;
 }
 
 #footer {
- color: #4f4257;
+ color: var(--txt);
+ margin:-1.2em;
  font-size: 0.8em;
 }
 
@@ -351,7 +360,7 @@ float: right;
 }
 
 .navhead {
- background-image: url(../images/hdrsd.png);
+ background-image: url(../images/hdrsd.gif);
  background-repeat: repeat-x;
  background-position: right; 
  height: 1em;
@@ -368,14 +377,14 @@ float: right;
 
 #headerfocus {
  position: absolute;
- right: 1.5%;
- top: 1.45%;
- overflow-y: hidden;
+ right: 1%;
+ top: 5.3%;
+ scale: 70%;
 }
 
 .innerborder {
- background-image: url(../images/bdbg.png);
- border: 1px solid #947ed0;
+ background-image: url(../images/bdbg.gif);
+ border: 1px solid var(--color7);
  border-radius: 5px;
  display: inline-flex; /* Remove to make fill */
  padding: 1%;
@@ -387,17 +396,17 @@ float: right;
 }
 
 *::-webkit-scrollbar-track {
- background: #daccee;
+ background: var(--scrollbar);
 }
 
 *::-webkit-scrollbar-thumb {
- background-color: #9071bb;
+ background-color: var(--color4);
  border-radius: 10px;
- border: 3px solid #ffffff;
+ border: 3px solid var(--heading);
 }
 
 .songtitle, .track-info, .now-playing{
- color: #ffffff;
+ color: var(--heading);
  font-size: 0.8em;
  padding: 0px;
 }
@@ -420,7 +429,7 @@ float: right;
 }
 
 .playpause-track, .prev-track, .next-track{
- color: #ffffff;
+ color: var(--heading);
  font-size: 1.8em;
 }
 
@@ -439,8 +448,8 @@ float: right;
 }
 
 .track-info{
- background: rgba(110, 82, 126, 0.5);
- border: 1px solid #947ed0;
+ background: var(--rgba6);
+ border: 1px solid var(--color7);
  border-radius: 5px;
  padding: 5px;
 }
@@ -459,13 +468,13 @@ input[type=range]:focus{
 }
 
 input[type=range]::-webkit-slider-runnable-track{
- background:#ffffff;
+ background:var(--heading);
  width: 90%;
  height: 3px;
 }
 
 input[type=range]::-webkit-slider-thumb{
- background: #ffffff;
+ background: var(--heading);
  border-radius: 3px;
  height: 0.8em;
  width: 0.8em;
@@ -474,13 +483,13 @@ input[type=range]::-webkit-slider-thumb{
 }
 
 input[type=range]::-moz-range-track{
- background: #ffffff;
+ background: var(--heading);
  width: 90%;
  height: 3px;
 }
 
 input[type=range]::-moz-range-thumb{
- background: #ffffff;
+ background: var(--heading);
  border: none;
  border-radius: 3px;
  height: 0.8em;
@@ -497,13 +506,13 @@ input[type=range]:focus{
 }
 
 input[type=range]::-webkit-slider-runnable-track{
- background:#ffffff;
+ background:var(--heading);
  width: 90%;
  height: 3px;
 }
 
 input[type=range]::-webkit-slider-thumb{
- background: #ffffff;
+ background: var(--heading);
  border-radius: 3px;
  width: 0.8em;
  height: 0.8em;
@@ -512,13 +521,13 @@ input[type=range]::-webkit-slider-thumb{
 }
 
 input[type=range]::-moz-range-track{
- background: #ffffff;
+ background: var(--heading);
  width: 90%;
  height: 3px;
 }
 
 input[type=range]::-moz-range-thumb{
- background: #ffffff;
+ background: var(--heading);
  border: none;
  border-radius: 3px;
  width: 0.8em;

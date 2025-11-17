@@ -1,8 +1,9 @@
 /* -------------- popup -------------- */
 .poparea {
  display: grid;
- grid-template-columns: repeat(3, min-content);
+ grid-template-columns: repeat(3, auto);
  justify-content: space-around;
+ justify-items: center;
  gap: 100px;
  padding: 55px;
 }
@@ -19,6 +20,7 @@
 .pophost img {
  width: 100%;
  height: 100%;
+ object-fit: contain;
  -webkit-touch-callout: none !important;
 -webkit-user-select: none !important;
 -webkit-user-drag: none !important;
@@ -28,6 +30,7 @@
  user-select: none !important;
 }
 .popup {
+ justify-items: center;
  position: absolute;
  max-width: 250px;
  width: max-content;
@@ -47,6 +50,10 @@
  transform: translate(-50%, -50%) scale(1);
 }
 
+.extra img {
+ width: 7%;
+ height: 7%;
+}
 /* -------- popup box -------- */
 .popup {
  font-size: small;
@@ -54,5 +61,5 @@
  border-radius: 5px;
  display: inline-block;
  padding: 5px;
- background-image: url(../images/bdbg.png);
+ background-image: url(../images/bdbg.gif);
 }
