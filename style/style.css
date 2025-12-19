@@ -124,6 +124,15 @@ ul {
 
 
 
+.horizont {
+ gap: 20px;
+ justify-content: center;
+ align-items: center;
+ display: table-cell;
+}
+
+
+
 
 
 body {

@@ -30,6 +30,7 @@
  user-select: none !important;
 }
 .popup {
+ z-index:1;
  justify-items: center;
  position: absolute;
  max-width: 250px;
