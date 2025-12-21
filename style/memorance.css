@@ -17,6 +17,9 @@
 .pophost:hover {
  transform: scale(1.05);
 }
+.extra:hover {
+ transform: scale(1.2);
+}
 .pophost img {
  width: 100%;
  height: 100%;
@@ -50,7 +53,6 @@
  pointer-events: all;  /*highlighting*/
  transform: translate(-50%, -50%) scale(1);
 }
-
 .extra img {
  width: 7%;
  height: 7%;

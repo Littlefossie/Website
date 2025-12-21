@@ -14,8 +14,9 @@ const pt = this.getAttribute("pt");
 this.innerHTML = `
     <div class="pophost">
         <img src="./images/mem/${pi}.gif" title="${pn}">
-        <div class="popup">
+        <div class="popup"><div class="innercontainer">
             <p>${pt}</p>
+        </div>
             ${pe}
     </div></div>`;
 }}customElements.define("pop-c", popc);
