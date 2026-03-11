@@ -12,34 +12,37 @@
 	<link href="./style/style.css" rel="stylesheet" media="all">
 </head>
 <body>
-    
+  
 <!--PopComponents-->
 <pop-c 
 	pi="ph"
-    ptit="NAME"
-    ptxt="TXT"
-			
-    pimg="ph"
-    petit="TITLE"
-    petxt="TXT"
+  pn="NAME"
+  pt="TXT"
+
+  pei="ph"
+  pen="TITLE"
+  pet="TXT"
 ></pop-c>
 <!--PopComponents-->
 
 </body>
 
-	<!--TitleMarquee--> <script> 
+	<script> // Title Marquee 
 		var marqright = true;
 		var marqtit = "title";
-		var marqspeed = 300;</script><script src="./js/titlemarquee.js"></script>
+		var marqspeed = 300;</script><script src="./js/titlemarquee.js">
+  </script>
 
-	<!--PopComponents--><script src="./js/popcomponents.js"></script>
-	<!--Popup--> <script src="./js/popup.js"></script>
+	<script src="./js/popcomponents.js"></script>
+	<script src="./js/popup.js"></script>
 	
-	<!--Jquery--> <script src="./js/jquery.min.js"></script>
-	<!--Tooltip--> <script src="./js/tooltips.js"></script><script>(function ($) {$(document).ready(function(){$("[title]").style_my_tooltips({ 
-		tip_follows_cursor: true,
-		tip_delay_time: 50,
-		tip_fade_speed: 100,
-		attribute:"title"});});})(jQuery);</script>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/tooltips.js"></script>
+    <script>$("[title]").style_my_tooltips({
+      tip_follows_cursor: true,
+      tip_delay_time: 50,
+      tip_fade_speed: 100,
+      attribute: "title"
+    });(jQuery);</script>
 
 </html>

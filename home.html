@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Home iframe</title>
+	<title>Homepage!</title>
 	<meta name="description" content="home iframe">
 	<link rel="icon" href="./images/favicon.gif" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,22 +15,52 @@
 	
 <div class="innerborder">
 	<div class="innercontainer">
-		<p>Haii, I'm fossie</p>
-		<p>Welcome to my websitaroo and whatnots</p>
-		<p>This craps barebones and not done and all right now! x_x</p>
-		<p>I'm lazy and make noo progress</p>
+		<p>
+      Haii, Littlefossie here.<br>
+      <br>
+      Welcome to my websitaroo and whatnots<br>
+      This craps barebones and not done and all right now! x_x<br>
+      I'm lazy and can't make noo progress<br>
+      <br>
+      If it wasn't obvious, this is not mobile friendly, nor really resize friendly either lol.<br>
+      <br>
+      you can navigate the site using the navbar on the left!<br>
+      Scroll down the site for interact with me section<br>
+    </p>
 </div>
 </div>
 
 <div class="outercontainer">
 	<h2>title</h2>
-	<p>blanks</p>
-		
+	<p>text would go here if I had something to write haha</p>
 </div>
 
-</div>
-</article>
+<div class="mini">
+
+	<div id="planning">
+		<h2 class="upper">Update log</h2>
+			<div id="ups"></div>
+	</div>
+
+	<div id="recents">
+		<h2 class="upper">
+      <a href="./blog.html" target="mainframe">Recents</a>
+      <a href="https://littlefossie.dreamwidth.org/data/atom" target="_blank" rel="noopener noreferrer">
+        <image src="./images/rss.gif" class="rssimage" 
+        title="If you wanna subscribe to me for some reason?? (lookup how to follow rss if you dunno how2)"></image>
+      </a>
+    </h2>
+		<div id="rss-feed" data-max-posts="4"></div>
+	</div>
 </div>
 
 </body>
+	<script src="./subpages/updates.js"></script>
+
+  <script src="./js/jquery.min.js"></script>
+	<script src="./js/tooltips.js"></script>
+    <script>$("[title]").style_my_tooltips({});(jQuery);</script>
+
+  <script src="./js/rss-fetch.js"></script>
+    <script>function closeAllButFirst() {const details = document.querySelectorAll('#rss-feed details');details.forEach((d, i) => d.open = i === 0);}const observer = new MutationObserver(() => {if (document.querySelector('#rss-feed details')) {closeAllButFirst();observer.disconnect();}});observer.observe(document.getElementById('rss-feed'), {childList: true,subtree: true});</script>
 </html>

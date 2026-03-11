@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Title</title>
+	<title>Profilee</title>
 	<meta name="description" content="Profile">
 	<link rel="icon" href="./images/favicon.gif" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,25 +14,37 @@
 </head>
 <body>
 
-    <div class="innerborder"><div class="innercontainer">
-        <p>Kinda gave up on this fo the time being </p>
-        <p>I'm Fossie blabla!</p>
-        <p>I like gaming a lot and that's practically all I am<br>But I also like building, logic gates wiring blah, reading manga manhua manhwa, (ANYTHING but novels), and photography exploring stuff</p>
-        <p>~warnangs</p>
-        <p>I'm bad at holding conversations or topics, I usually don't initiate or start things.<br>Selfish and responsibility running, I tend to distance and try to hide or close my eyes</p>
+<div class="innerborder">
+	<div class="innercontainer" style="display: flex; flex-direction: row;">
+		<p>I'm Fossie or just Foss !<br>
+		<br>
+    I *thoroughly* <ruby>enjoy gaming,<rt>if that wasn't obvious already</rt></ruby> creation like building and drawing, logical things like coding or wiring, and art like photos 'n creating things along with exploring.<br>
+		<br>
+		Besides that I guess I like to act on the sillier side, messing around and stuff<br>
+    <br>
+    Apparently I'm pretty easy going, considerate, and usually available, but I struggle with confrontation and get attatched kind of easily, according to others!<br>
+    <br>
+    If you wanna learn more about me, head over to the infobook for snipbits of my life, and if you wanna be my friend especially check out the <a href="./info2.html" target="mainframe">friend page</a>!<br>
+    </p>
 
-        <div class="innerborder"><div class="outercontainer" style="background: #c90265;">
-            <img src="./images/pfp.gif" alt="">
-            <p>He / anys</p>
-            <p>19</p>
-        </div></div>
-		<div class="outercontainer"></div>
-	</div></div>
+		<div class="innerborder" style="float: right;flex-direction: column;width:20em">
+			<div class="outercontainer" style="background: #c90265;">
+				<img src="./images/pfp.gif" alt="pfp">
+				<p>He / any<br>
+				19</p>
+			</div>
+			
+      <div class="outercontainer">
+        <div id="pstatus"></div>
+	    </div>
+
+	</div>
+</div>
 
 </body>
-	<!--Tooltip--> <script src="./js/tooltips.js"></script><script>(function ($) {$(document).ready(function(){$("[title]").style_my_tooltips({ 
-		tip_follows_cursor: true,
-		tip_delay_time: 50,
-		tip_fade_speed: 100,
-		attribute:"title"});});})(jQuery);</script>
+	<script src="./js/pstatus.js" defer></script>
+
+  <script src="./js/jquery.min.js"></script>
+	<script src="./js/tooltips.js"></script>
+    <script>$("[title]").style_my_tooltips({});(jQuery);</script>
 </html>
