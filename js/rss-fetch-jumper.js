@@ -1,7 +1,7 @@
 (async () => {
   try {
     const response = await fetch(
-      "https://corsproxy.io/?https://littlefossie.dreamwidth.org/data/atom"
+      "./subpages/atom.xml"
     );
 
     const xmlText = await response.text();

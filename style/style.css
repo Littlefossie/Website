@@ -458,6 +458,14 @@ float: right
  overflow-x: hidden;
 }
 
+#gallery iframe {
+ border:none;
+ width:100%;
+ height:33em;
+ overflow-y: hidden;
+ overflow-x: hidden;
+}
+
 .sidepad {
  padding: 4.5%
 }

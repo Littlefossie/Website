@@ -9,7 +9,7 @@ fetch("https://status.cafe/users/littlefossie/status.json")
       </a>
       ${r.content}
       <br>
-      Feeling: <a href="https://www.imood.com/users/Littlefossie"><img src="https://moods.imood.com/display/uname-Littlefossie/trans-0/imood.gif" border="1"></a>
+      Feeling: <a href="https://www.imood.com/users/Littlefossie" target="_blank"><img src="https://moods.imood.com/display/uname-Littlefossie/trans-0/imood.gif" border="1"></a>
       <br>
       Posted ${r.timeAgo}
     `:`

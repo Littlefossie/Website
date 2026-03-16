@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dw="https://www.dreamwidth.org">
+  <id>tag:dreamwidth.org,2026-02-01:4313705</id>
+  <title>littlefossie</title>
+  <subtitle>littlefossie</subtitle>
+  <author>
+    <name>littlefossie</name>
+  </author>
+  <link rel="alternate" type="text/html" href="https://littlefossie.dreamwidth.org/"/>
+  <link rel="self" type="text/xml" href="https://littlefossie.dreamwidth.org/data/atom"/>
+  <updated>2026-02-11T05:54:45Z</updated>
+  <dw:journal username="littlefossie" type="personal"/>
+  <entry>
+    <id>tag:dreamwidth.org,2026-02-01:4313705:897</id>
+    <link rel="alternate" type="text/html" href="https://littlefossie.dreamwidth.org/897.html"/>
+    <link rel="self" type="text/xml" href="https://littlefossie.dreamwidth.org/data/atom/?itemid=897"/>
+    <title>rss hell</title>
+    <published>2026-02-11T05:54:45Z</published>
+    <updated>2026-02-11T05:54:45Z</updated>
+    <dw:mood>anxious</dw:mood>
+    <dw:security>public</dw:security>
+    <dw:reply-count>0</dw:reply-count>
+    <content type="html">ok. I got the blog and crap working. It went through like 5 different iterations of rewriting using different methods then a thousand edits and its still not even how I want it to be and the jumpto is buggy. But it works and I'm done with it for now. I haven't been pushing to git so I can't see my sad update history but owell&lt;br /&gt;other than that I'm worried about a friend, but I've been pushed out of their life so there's not much I can do unless I want to get pushy/stalky, I just hope they're doing well.&lt;br /&gt;&lt;br /&gt;&lt;img src="https://www.dreamwidth.org/tools/commentcount?user=littlefossie&amp;ditemid=897" width="30" height="12" alt="comment count unavailable" style="vertical-align: middle;"/&gt; comments</content>
+  </entry>
+  <entry>
+    <id>tag:dreamwidth.org,2026-02-01:4313705:726</id>
+    <link rel="alternate" type="text/html" href="https://littlefossie.dreamwidth.org/726.html"/>
+    <link rel="self" type="text/xml" href="https://littlefossie.dreamwidth.org/data/atom/?itemid=726"/>
+    <title>Secondarry test</title>
+    <published>2026-02-04T01:02:48Z</published>
+    <updated>2026-02-04T01:08:14Z</updated>
+    <dw:security>public</dw:security>
+    <dw:reply-count>0</dw:reply-count>
+    <content type="html">&lt;div class="post"&gt;Just another test post tryna figure out how to get my rss to embed how I want it to in my site~&lt;/div&gt;&lt;br /&gt;&lt;br /&gt;&lt;img src="https://www.dreamwidth.org/tools/commentcount?user=littlefossie&amp;ditemid=726" width="30" height="12" alt="comment count unavailable" style="vertical-align: middle;"/&gt; comments</content>
+  </entry>
+  <entry>
+    <id>tag:dreamwidth.org,2026-02-01:4313705:342</id>
+    <link rel="alternate" type="text/html" href="https://littlefossie.dreamwidth.org/342.html"/>
+    <link rel="self" type="text/xml" href="https://littlefossie.dreamwidth.org/data/atom/?itemid=342"/>
+    <title>Testing this out first</title>
+    <published>2026-02-02T01:46:09Z</published>
+    <updated>2026-02-02T01:46:09Z</updated>
+    <dw:mood>aaaah</dw:mood>
+    <dw:security>public</dw:security>
+    <dw:reply-count>0</dw:reply-count>
+    <content type="html">&amp;gt;///&amp;lt; aaah &lt;img src="https://cdn.discordapp.com/attachments/821938898292441118/862472200707637278/unknown.png?ex=69813054&amp;amp;is=697fded4&amp;amp;hm=b77278e372cc3e7c6907750ade2564ff20f674625f0e4732e254901e1c4db7a2&amp;amp;animated=true" alt="test pic" width="200" height="104" /&gt;   https://rss.bloople.net/  &lt;marquee&gt;weeee&lt;/marquee&gt;  &lt;h1&gt;h1&lt;/h1&gt; &lt;h2&gt;h2&lt;/h2&gt;&lt;br /&gt;&lt;br /&gt;&lt;iframe style="border-width: 0px; border-style: initial; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1083983989/size=small/bgcol=ffffff/linkcol=0687f5/track=4214003625/transparent=true/" seamless=""&gt;&amp;lt;a href="https://c418.bandcamp.com/album/life-changing-moments-seem-minor-in-pictures"&amp;gt;life changing moments seem minor in pictures by C418&amp;lt;/a&amp;gt;&lt;/iframe&gt;&lt;br /&gt;&lt;br /&gt;&lt;lj-embed id=""&gt;&lt;iframe style="border-width: 0px; border-style: initial; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1083983989/size=large/bgcol=333333/linkcol=e32c14/tracklist=false/artwork=small/transparent=true/" seamless=""&gt;&amp;lt;a href="https://c418.bandcamp.com/album/life-changing-moments-seem-minor-in-pictures"&amp;gt;life changing moments seem minor in pictures by C418&amp;lt;/a&amp;gt;&lt;/iframe&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;ok hopefully I actually finish this website soon. Idk why I got a blogger I don't know how much I'll blog n journal but here itis!&lt;br /&gt;&lt;br /&gt;&lt;img src="https://www.dreamwidth.org/tools/commentcount?user=littlefossie&amp;ditemid=342" width="30" height="12" alt="comment count unavailable" style="vertical-align: middle;"/&gt; comments</content>
+  </entry>
+</feed>
