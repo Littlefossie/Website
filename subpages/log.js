@@ -1,6 +1,6 @@
 const logs = ` 
 
 <li>Haii hello hi</li>
-<li>use anon message (strawpage to the left) or chat helpp give me ideas or like things about me to put in my profile description and infobook I need to fill it out and I can't think about myself</li>
+<li><div class="innercontainer">Hi ! ! i think you are cool . this site is really cool :)</div> TYY who sent this gyaah</li>
 
 `;document.getElementById("logs").innerHTML = logs
