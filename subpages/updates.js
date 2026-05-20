@@ -1,7 +1,7 @@
 const ups = ` 
 
-<li title="3/16/06">v2.1 added image galleries</li>
-<li title="3/10/06">v2 actual site release waah</li>
+<li title="3/16/26">v2.1 added image galleries</li>
+<li title="3/10/26">v2 actual site release waah</li>
 
 <h2>todo</h2>
   <li>actually fill out the pages</li>

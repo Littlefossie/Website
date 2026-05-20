@@ -196,7 +196,7 @@ textarea {
  vertical-align:center
 }
 
-#layout {
+#layout, #lbrdr {
  background: var(--rgba2);
  border: 3px solid var(--color10);
  border-radius: 5px;
@@ -204,7 +204,16 @@ textarea {
  height: auto;
  position: relative;
  margin: auto;
- overflow-y: auto
+ overflow-y: auto;
+ overflow-x: hidden;
+}
+
+#lbrdr {
+ width: 76em;
+ background: 0;
+ border-style: solid;
+ border-width: 50px;
+ border-image: url(../images/brdr.gif) 100 round;
 }
 
 #topbanner {
