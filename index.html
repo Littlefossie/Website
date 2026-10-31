@@ -68,15 +68,23 @@
 <div class="solo">
 
 	<!--Strawpage-->
-	<aside id="container">
-	<div class="straw-info">
-    -? <ruby><rt>hover for help</rt></ruby>
-		<div class="straw-overlay"></div>
-	</div>
+	<aside id="container" title="Strawpage disabled embeds so you gotta go to the site ): -click">
+    <!-- temp fix -->
+    <div class="straw-info">
+      -? <ruby><rt>Hover for help</rt></ruby>
+      <div class="straw-overlay"></div>
+      <div class="straw-tut"></div>
+    </div>
+    <!-- temp fix -->
 
 
 		<div id="strawpage">
-			<iframe scrolling="no" src="https://littlefossie.straw.page"></iframe>
+			<!-- <iframe scrolling="no" src="https://littlefossie.straw.page"></iframe> -->
+      <!-- temp fix -->
+      <div class="straw-fix">
+        
+      </div>
+      <!-- temp fix -->
 		</div>
 	</aside>
 	
@@ -119,6 +127,9 @@
   <script src="./js/jquery.min.js"></script>
 	<script src="./js/tooltips.js"></script>
     <script>$("[title]").style_my_tooltips({});(jQuery);</script>
+
+  <script>(function () {document.getElementById('container').addEventListener('click', function (){window.open(
+    'https://littlefossie.straw.page','_blank', 'noopener');});})();</script>
   
 	<script> // Title Marquee
 		var marqright = true;

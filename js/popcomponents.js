@@ -5,14 +5,10 @@ const pet = this.getAttribute("pet");
 
 const ifpei = pei ? `
   <div class="pophost" id="pex">
-    <div class="extra">
-      <img src="./images/mem/${pei}.gif" title="${pen}">
-    </div>
+    <img src="./images/mem/${pei}.gif" title="${pen}">
 `: `
   <div class="pophost"  id="pex" title="${pen}">
-    <div class="extra">
-      <h2>${pen}</h2>
-    </div>
+    <h2>${pen}</h2>
 `;
 
 const ifpe = pen ? `

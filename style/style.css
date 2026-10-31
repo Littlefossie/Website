@@ -42,7 +42,7 @@ html {
 #s-m-t-tooltip {
  /* basic */
  max-width: 300px;
- z-index: 10;
+ z-index: 20;
  /*      down          right */
  margin: 10px 14px 7px 25px;
  /* style and design */
@@ -436,31 +436,70 @@ float: right
 
 .straw-info {
  position: absolute;
+ top: 0;
+ left: 0;
+ z-index: 11;
  cursor: var(--curhelp), auto;
 }
 
-.straw-info:hover .straw-overlay {
+/* whole container triggers the overlay, not just the little corner label */
+#container {
+ cursor: var(--curhelp), auto;
+ --straw-y: 15px; /* one offset shared by the cover background and the overlay, keeps them in sync */
+}
+
+/* base overlay: shown whenever the container is hovered */
+#container:hover .straw-overlay {
  opacity: 1;
 }
 
-.straw-overlay {
- pointer-events: none;
+.straw-overlay, .straw-tut {
+ pointer-events: none; /* clicks fall through to #container */
  opacity: 0;
  transition: 0.2s;
- background-image: url(../images/stut.gif);
  position: absolute;
+ top: var(--straw-y); /* pinned, no longer depends on the ruby text height */
+ left: 0;
  height: 47em;
  width: 42em;
+}
+
+.straw-overlay {
+ background-image: url(../images/sfix2.gif);
+}
+
+/* tutorial overlay: only the "-?" shows it, drawn on top of the base overlay */
+.straw-info:hover .straw-tut {
+ opacity: 1;
+}
+
+.straw-tut {
+ background-image: url(../images/stut.gif);
+ margin-top: 14px;
 }
 
 #strawpage {
  height: 50em;
  overflow-y: hidden;
  overflow-x: hidden;
+ /* v Broken embed cover v */
+ background-image: url(../images/sfix.gif);
+ background-position: 0px var(--straw-y);
+ cursor: var(--curhelp), auto;
+}
+
+.strawfix {
+ opacity: 1;
+ transition: 0.2s;
+ background-image: url(../images/ctbg.gif);
+}
+
+.strawfix:hover {
+ opacity: 1;
 }
 
 #strawpage iframe {
- border:none;
+ border:none;  
  width:100%;
  height:60em;
  overflow-y: hidden;
@@ -746,9 +785,7 @@ input[type=range]::-moz-range-thumb{
 .pophost:hover {
  transform: scale(1.05);
 }
-.extra:hover {
- transform: scale(1.2)
-}
+
 .pophost img {
  width: 100%;
  height: 100%;
@@ -785,13 +822,13 @@ input[type=range]::-moz-range-thumb{
 }
 
 #pex {
-  width:80%;
-  height:80%;
+  width:100%;
+  height:100%;
 }
 
-.extra img {
- width: 7%;
- height: 7%
+#pex img {
+ width: 1.5em;
+ height: 1.5em;
 }
 
 #pstatus {
